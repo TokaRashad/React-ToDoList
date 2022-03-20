@@ -1,0 +1,49 @@
+.to-do-app{
+    margin: 2% 6%;
+}
+
+.to-do-app .txt-inp{
+    margin-right: 5%;
+    padding: .8%;
+    width: 20%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.to-do-app .submit{
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px black;
+    font-size: large;
+    font-weight: bold;
+    color: #566375;
+}
+
+.to-do-app .list{
+    list-style:decimal inside;
+    width: 20%;
+    margin-top: 2%;
+    padding: .8% .8% 10%;
+    box-shadow: 2px 2px 20px white;
+    font-style: italic;
+    font-size: large;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-weight: 400;
+    color: white;
+}
+
+.to-do-app .list .list-item{
+    margin-bottom: 2%;
+}
+
+.to-do-app .list .list-item .delete{
+    color: rgb(88, 88, 88);
+    margin-left: 10%;
+    cursor: pointer;
+}
