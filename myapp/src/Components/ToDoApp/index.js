@@ -20,6 +20,14 @@ class ToDoApp extends Component{
             todoEl: "",
         })
     }
+
+    handleDelete = (itemDeleted) => {
+        console.log(itemDeleted);
+        var newList = this.state.todoList.filter(i => i != itemDeleted)
+        this.setState({
+            todoList:newList,
+        })
+    }
     
     render(){
         return(
@@ -29,8 +37,10 @@ class ToDoApp extends Component{
                     <input type="submit" value="Add" className="submit"/>
                 </form>
                     <ul className="list">
-                        {this.state.todoList.map(function (element){
-                            return <li className="list-item">{element}</li>
+                        {this.state.todoList.map((item, i) => {
+                            return <li className="list-item" key={item}>{item}
+                            <button className="delete-btn" onClick={() => this.handleDelete(item)}>Delete</button>
+                            </li>
                         })}
                     </ul>    
             </div>
